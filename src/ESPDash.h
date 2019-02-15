@@ -73,7 +73,7 @@ typedef std::function<void(const char* buttonId)> DashButtonHandler;
 class ESPDashClass{
 
     public:
-        void init(AsyncWebServer& server);
+        bool init(AsyncWebServer& server);
         void disableStats();    // To Disable Stats and disable reboot
 
         void addNumberCard(const char* _id, const char* _name); // Add Number card with default value
